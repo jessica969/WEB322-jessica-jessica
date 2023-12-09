@@ -1,32 +1,27 @@
-<!-- list.ejs -->
+<!-- users.ejs -->
 <html>
 
 <head>
     <%- include('partials/head.ejs') %>
+    <title>Users</title>
 </head>
 
 <body class="container">
     <%- include('partials/topnav.ejs') %>
-    <h1>
-        List
-    </h1>
+    <h1>Users List</h1>
     <table class='table'>
         <thead>
             <th>Id</th>
             <th>Name</th>
-            <th>Email</th>
         </thead>
         <tbody>
             <% users.forEach(function(user) { %>
                 <tr>
-                    <td><a href="/detail/<%= user.id %>">
+                    <td><a href="/users/<%= user.id %>">
                             <%= user.id %>
                         </a></td>
                     <td>
                         <%= user.firstName %> <%= user.lastName %>
-                    </td>
-                    <td>
-                        <%= user.email %>
                     </td>
                 </tr>
                 <% }); %>
@@ -35,18 +30,17 @@
     <nav aria-label="Page navigation example">
         <ul class="pagination">
             <li class="page-item">
-                <a class="page-link" href="/list?page=<%= page - 1 %>" aria-label="Previous">
+                <a class="page-link" href="/users?page=<%= page - 1 %>" aria-label="Previous">
                     <span aria-hidden="true">&laquo; Previous</span>
                 </a>
             </li>
             <li class="page-item">
-                <a class="page-link" href="/list?page=<%= page + 1%>" aria-label="Next">
+                <a class="page-link" href="/users?page=<%= page + 1%>" aria-label="Next">
                     <span aria-hidden="true">Next &raquo;</span>
                 </a>
             </li>
         </ul>
     </nav>
-    <!-- Removed unnecessary closing div tag -->
 </body>
 
 </html>

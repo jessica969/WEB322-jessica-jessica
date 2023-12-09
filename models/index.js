@@ -4,7 +4,7 @@ const UserModel = require("../models/user");
 const ProductModel = require("../models/product");
 
 // setting up the database connection
-const sequelize = new Sequelize("SenecaDB", "cchand3", "4WsMO5BvjoVC", {
+const sequelize = new Sequelize("SenecaDB", "jessica969", "X$7p@Q!l4sT2", {
   host: "ep-round-leaf-68528432-pooler.us-east-2.aws.neon.tech",
   dialect: "postgres",
   dialectOptions: {
