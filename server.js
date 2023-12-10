@@ -11,7 +11,7 @@ const app = express();
 const port = 3000;
 
 // set up sequelize for postgresql db connection
-const sequelize = new Sequelize("SenecaDB", "jessica969", "X$7p@Q!l4sT2", {
+const sequelize = new Sequelize("SenecaDB", "cchand3", "4WsMO5BvjoVC", {
   host: "ep-round-leaf-68528432-pooler.us-east-2.aws.neon.tech",
   dialect: "postgres",
   dialectOptions: {
